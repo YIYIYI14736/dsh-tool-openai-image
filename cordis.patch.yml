@@ -1,0 +1,12 @@
+- insert:
+    - id: openai-image-tool
+      name: dsh-tool-openai-image
+      config:
+        baseURL: "https://api.openai.com/v1"
+        endpoint: "/images/generations"
+        apiKeyEnv: "OPENAI_API_KEY"
+        defaultModel: "gpt-image-1"
+        defaultSize: "1024x1024"
+        timeoutMs: 180000
+        maxImageBytes: 26214400
+        responseMode: "auto"
